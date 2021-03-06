@@ -14,7 +14,7 @@ function sum(sumArr) { //eslint-disable-line
     return sum;
 }
 sum(testArray)
-console.log(sum);
+// console.log(sum);
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -74,7 +74,7 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
     let array=[];
-    return array=[sum,'2,3,4 was passed in as an array of numbers, and 9 is their sum.'];
+    return array=[sum,testArray+ ' was passed in as an array of numbers, and ' +parseInt(sum)+ ' is their sum.'];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
