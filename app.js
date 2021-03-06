@@ -8,10 +8,13 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
-
+var testArray = [2, 3, 4];
+function sum(sumArr) { //eslint-disable-line
+    sum= testArray[0]+testArray[1]+testArray[2];
+    return sum;
 }
-
+sum(testArray)
+console.log(sum);
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -71,10 +74,7 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
     let array=[];
-    let sum=sumArr[0]+sumArr[1]+testArray[2];
-    
     return array=[sum,'2,3,4 was passed in as an array of numbers, and 9 is their sum.'];
-
 }
 
 // Here is the test for sumArray(); uncomment it to run it
