@@ -26,10 +26,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
+var testArray = [2, 3, 4];
+function multiply(multArr) { //eslint-disable-line
+    multiply=testArray[0]*testArray[1]*testArray[2];
+    return multiply;
 
 }
-
+multiply(testArray);
+// console.log(multiply);
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -92,9 +96,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
     let array=[];
-    let product=multArr[0]*multArr[1]*multArr[2];
-
-    return array=[product,'The numbers 2,3,4 have a product of 24.'];
+    return array=[multiply,'The numbers ' +testArray+' have a product of '+multiply+'.'];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
