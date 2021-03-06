@@ -8,12 +8,16 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
+function sum(a,b,c) { //eslint-disable-line
+    sum= a+b+c;
+    return sum;
 
+ 
 }
-
+sum(4,7,5)
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+// testSum(4,7,5);
+console.log(sum);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -26,10 +30,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
+function multiply(a,b,c) { //eslint-disable-line
+     multiply= a*b*c;
+    return multiply;
+
 
 }
-
+multiply(4,7,5);
+console.log(multiply);
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -48,10 +56,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    let array=[];
-    let sum=a+b+c;
-    let multiply=a*b*c;
-    return array=[sum,multiply,'4 and 7 and 5 sum to 16.','The product of 4 and 7 and 5 is 140.'];
+    
+    return[sum,multiply,parseInt(a)+' and '+ parseInt(b)+' and '+ parseInt(c)+' sum to '+parseInt(sum)+'.','The product of '+ parseInt(a)+' and '+ parseInt(b)+' and '+ parseInt(c)+' is '+ parseInt(multiply)+'.']
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
